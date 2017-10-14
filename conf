@@ -14,7 +14,9 @@
 # Default server configuration
 #
 upstream fibonacci {
-	NEW IP
+		server 10.128.0.7;
+	server 10.128.0.12;
+	server 10.128.0.13;
 }
 server {
 	listen 80 default_server;
